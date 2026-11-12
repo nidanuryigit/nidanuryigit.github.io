@@ -215,7 +215,7 @@ function initContactForm() {
       );
 
       // İsteğe bağlı olarak mailto alternatifi tetiklenebilir
-      const mailtoLink = `mailto:nidanuryigit.ce@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Gönderen: " + name + " (" + email + ")\n\n" + message)}`;
+      const mailtoLink = `mailto:nidanuryigittt@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Gönderen: " + name + " (" + email + ")\n\n" + message)}`;
       console.log('İletişim mailto taslağı:', mailtoLink);
     }, 900);
   });
