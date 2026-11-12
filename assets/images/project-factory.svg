@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bgGrad2)" rx="16" />
+
+  <!-- Code / Terminal Window Mockup -->
+  <rect x="60" y="45" width="480" height="270" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
+  
+  <!-- Terminal Top Bar -->
+  <rect x="60" y="45" width="480" height="34" rx="10" fill="#161b22" />
+  <rect x="60" y="67" width="480" height="12" fill="#161b22" />
+  <circle cx="82" cy="62" r="5" fill="#ff5f56" />
+  <circle cx="98" cy="62" r="5" fill="#ffbd2e" />
+  <circle cx="114" cy="62" r="5" fill="#27c93f" />
+  <text x="300" y="66" fill="#8b949e" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">factory_inventory_system.c — (C / File I/O Architecture)</text>
+
+  <!-- Terminal Content -->
+  <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#c9d1d9">
+    <text x="85" y="105"><tspan fill="#ff7b72">#include</tspan> <tspan fill="#a5d6ff">&lt;stdio.h&gt;</tspan>  <tspan fill="#8b949e">// Binary file handling &amp; record structs</tspan></text>
+    <text x="85" y="125"><tspan fill="#ff7b72">typedef struct</tspan> { <tspan fill="#79c0ff">int</tspan> id; <tspan fill="#79c0ff">char</tspan> name[<tspan fill="#79c0ff">32</tspan>]; <tspan fill="#79c0ff">float</tspan> stock; <tspan fill="#79c0ff">double</tspan> unit_price; } <tspan fill="#ffa657">Product</tspan>;</text>
+    
+    <text x="85" y="155"><tspan fill="#7ee787">========================================================</tspan></text>
+    <text x="85" y="172"><tspan fill="#58a6ff">&gt;&gt;&gt; FABRİKA ENVANTER VE TİCARET YÖNETİM SİSTEMİ v2.1 &lt;&lt;&lt;</tspan></text>
+    <text x="85" y="189"><tspan fill="#7ee787">========================================================</tspan></text>
+    
+    <text x="85" y="212"><tspan fill="#f2cc60">[1]</tspan> Yeni Hammadde &amp; Ürün Kaydı Ekle (fwrite)</text>
+    <text x="85" y="230"><tspan fill="#f2cc60">[2]</tspan> Envanter Listele &amp; Kritik Stok Filtresi (fread)</text>
+    <text x="85" y="248"><tspan fill="#f2cc60">[3]</tspan> Sevkiyat &amp; Fatura Hesaplama (KDV, Maliyet, Kâr)</text>
+    <text x="85" y="266"><tspan fill="#f2cc60">[4]</tspan> Veritabanı Dosyasını Güncelle &amp; Güvenli Çıkış</text>
+    
+    <text x="85" y="295"><tspan fill="#58a6ff">nida@gibtu-terminal:~$</tspan> <tspan fill="#ffffff">./inventory_manager --load-records</tspan> <tspan fill="#58a6ff" opacity="0.8">▋</tspan></text>
+  </g>
+
+  <!-- Status Chip -->
+  <g transform="translate(430, 260)">
+    <rect width="90" height="24" rx="6" fill="#1f6feb" opacity="0.2" stroke="#58a6ff" stroke-width="1" />
+    <text x="45" y="16" fill="#58a6ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">STABLE (C99)</text>
+  </g>
+</svg>

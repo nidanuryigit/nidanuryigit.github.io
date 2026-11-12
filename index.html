@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nida Nur Yiğit | Bilgisayar Mühendisliği Portfolyosu</title>
+  <meta name="description" content="Nida Nur Yiğit - Bilgisayar Mühendisliği 2. Sınıf Öğrencisi (GİBTÜ). C, Python, C#, Gömülü Sistemler (Arduino) ve Veri Yapıları odaklı kişisel portfolyo.">
+  <meta name="keywords" content="Nida Nur Yiğit, Bilgisayar Mühendisliği, GİBTÜ, Portfolyo, Python, C Dili, Arduino, SQLite, YAZEK Dergi">
+  <meta name="author" content="Nida Nur Yiğit">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50' y='68' font-size='55' font-weight='800' fill='white' text-anchor='middle' font-family='sans-serif'>NY</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Ana Stil Dosyası (Relative Path) -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Arka Plan Dekoratif Işık Efektleri -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+    <div class="ambient-blob-3"></div>
+  </div>
+
+  <!-- Üst Navigasyon / Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" aria-label="Nida Nur Yiğit Ana Sayfa">
+        <div class="logo-badge">NY</div>
+        <div class="brand-text">
+          <span class="name">Nida Nur Yiğit</span>
+          <span class="subtitle">Bilgisayar Mühendisliği</span>
+        </div>
+      </a>
+
+      <!-- Masaüstü Navigasyon -->
+      <nav class="desktop-nav" aria-label="Ana Menü">
+        <ul class="nav-menu">
+          <li><a href="./index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="./about.html" class="nav-link">Hakkımda</a></li>
+          <li><a href="./projects.html" class="nav-link">Projelerim</a></li>
+          <li><a href="./contact.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aksiyonlar (Tema & Menü Butonu) -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" aria-label="Açık/Koyu Tema Değiştir" title="Temayı Değiştir">
+          <!-- Ay İkonu (Koyu modda görünür) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <!-- Güneş İkonu (Açık modda görünür) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </button>
+
+        <!-- Mobil Menü Hamburger Butonu -->
+        <button type="button" class="hamburger" aria-label="Mobil Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Çekmece Menü -->
+  <div class="mobile-nav" aria-label="Mobil Menü">
+    <a href="./index.html" class="nav-link">Ana Sayfa</a>
+    <a href="./about.html" class="nav-link">Hakkımda</a>
+    <a href="./projects.html" class="nav-link">Projelerim</a>
+    <a href="./contact.html" class="nav-link">İletişim</a>
+  </div>
+
+  <main>
+    <!-- ==================== HERO BÖLÜMÜ ==================== -->
+    <section class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>Bilgisayar Mühendisliği 2. Sınıf @ GİBTÜ</span>
+            </div>
+
+            <h1 class="hero-title">
+              Yazılım mimarisi ve <span class="text-gradient">gömülü sistemlerle</span> çözümler üretiyorum.
+            </h1>
+
+            <p class="hero-lead">
+              Merhaba, ben <strong>Nida Nur Yiğit</strong>. Gaziantep İslam Bilim ve Teknoloji Üniversitesi'nde Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. <strong>C</strong>, <strong>Python</strong> ve <strong>C#</strong> dilleriyle masaüstü otomasyonları; <strong>Arduino</strong> ve sensör protokolleriyle akıllı donanım prototipleri geliştiriyorum.
+            </p>
+
+            <div class="hero-cta">
+              <a href="./projects.html" class="btn btn-primary">
+                <span>Projelerimi İncele</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              <a href="./contact.html" class="btn btn-secondary">
+                <span>İletişime Geç</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+              <a href="./about.html" class="btn btn-outline">
+                <span>Hakkımda Detayları</span>
+              </a>
+            </div>
+
+            <div class="hero-tech-strip">
+              <span class="tech-label">Odak Teknolojiler:</span>
+              <div class="tech-badges-row">
+                <span class="tech-pill">C</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">C# (WinForms)</span>
+                <span class="tech-pill">SQLite</span>
+                <span class="tech-pill">Arduino Uno</span>
+                <span class="tech-pill">Sensörler &amp; Neopixel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Profil Görseli -->
+          <div class="hero-visual">
+            <div class="hero-avatar-wrapper">
+              <div class="hero-avatar-inner">
+                <img src="./assets/images/profile-placeholder.svg" alt="Nida Nur Yiğit - Profil İllüstrasyonu" width="400" height="400" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== İSTATİSTİK / ÖZET KARTLARI ==================== -->
+    <section class="section-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Kart 1 -->
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">2. Sınıf</span>
+              <span class="stat-label">Bilgisayar Mühendisliği</span>
+            </div>
+          </div>
+
+          <!-- Kart 2 -->
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">GİBTÜ</span>
+              <span class="stat-label">Gaziantep İslam Bilim ve Tek. Üni.</span>
+            </div>
+          </div>
+
+          <!-- Kart 3 -->
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">3+ Temel</span>
+              <span class="stat-label">Uygulamalı Mühendislik Projesi</span>
+            </div>
+          </div>
+
+          <!-- Kart 4 -->
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">Editör</span>
+              <span class="stat-label">YAZEK Dijital Dergi &amp; Tasarım</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ÖNE ÇIKAN YETENEKLER ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Yetkinlikler</span>
+          <h2 class="section-title">Teknik ve Akademik Beceriler</h2>
+          <p class="section-subtitle">
+            Algoritmik düşünce yapısını gömülü donanımlar ve masaüstü yazılımlarla birleştiren pratik geliştirme deneyimi.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Kategori 1: Programlama Dilleri -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cat-lang">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Programlama Dilleri</h3>
+                <span class="skill-cat-desc">Sistem ve Uygulama Geliştirme</span>
+              </div>
+            </div>
+            <p>Bellek yönetimi, nesne yönelimli programlama ve algoritma pratikleri.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">C Dili (C99)</span>
+              <span class="skill-tag">Python 3</span>
+              <span class="skill-tag">C# (.NET)</span>
+              <span class="skill-tag">Veri Yapıları</span>
+            </div>
+          </div>
+
+          <!-- Kategori 2: Masaüstü & Veritabanı -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cat-data">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Yazılım &amp; Veritabanı</h3>
+                <span class="skill-cat-desc">Masaüstü Otomasyonları</span>
+              </div>
+            </div>
+            <p>İlişkisel veri modelleri, kullanıcı arayüzü ve kalıcı veri depolama mimarileri.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">SQLite3</span>
+              <span class="skill-tag">Tkinter GUI</span>
+              <span class="skill-tag">Windows Forms</span>
+              <span class="skill-tag">Dosya Tabanlı Depolama</span>
+            </div>
+          </div>
+
+          <!-- Kategori 3: Gömülü Sistemler & Donanım -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cat-embedded">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Gömülü Sistemler</h3>
+                <span class="skill-cat-desc">Donanım &amp; Prototipleme</span>
+              </div>
+            </div>
+            <p>Mikrodenetleyici programlama, çevresel sensör okuma ve lojik devreler.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Arduino Uno</span>
+              <span class="skill-tag">MQ-2/MQ-5 Gaz Sensörleri</span>
+              <span class="skill-tag">WS2812B Neopixel</span>
+              <span class="skill-tag">LDR &amp; PWM Devreleri</span>
+            </div>
+          </div>
+
+          <!-- Kategori 4: Web & Yayıncılık -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cat-web">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Web &amp; Editörlük</h3>
+                <span class="skill-cat-desc">Dijital Medya &amp; Tasarım</span>
+              </div>
+            </div>
+            <p>Modern web standartları, tipografi, dergi mizanpajı ve içerik editörlüğü.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5 &amp; CSS3</span>
+              <span class="skill-tag">Sayfa Tasarımı &amp; Mizanpaj</span>
+              <span class="skill-tag">YAZEK Dijital Dergi</span>
+              <span class="skill-tag">Teknik İçerik Üretimi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ÖNE ÇIKAN PROJELER ==================== -->
+    <section class="section" style="background: rgba(17, 24, 39, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfolyo</span>
+          <h2 class="section-title">Öne Çıkan Mühendislik Projeleri</h2>
+          <p class="section-subtitle">
+            Gerçek hayat problemlerine yönelik geliştirilmiş yazılım ve donanım otomasyonları.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Proje 1 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img src="./assets/images/project-dental.svg" alt="Diş Kliniği Randevu ve Yönetim Sistemi Görseli" loading="lazy">
+              <span class="project-badge">Python / Tkinter / SQLite</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Diş Kliniği Randevu ve Yönetim Sistemi</h3>
+              <p class="project-description">
+                Klinik süreçlerini dijitalleştirmek amacıyla Python ve Tkinter GUI kütüphanesi ile geliştirilmiş; SQLite3 veritabanı destekli hasta, doktor ve randevu takip otomasyonu.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Hasta kayıt, tedavi geçmişi ve randevu takvim modülü</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>SQLite3 ile ACID uyumlu ilişkisel veri mimarisi</span>
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Tkinter</span>
+                <span class="tech-pill">SQLite3</span>
+                <span class="tech-pill">Masaüstü GUI</span>
+              </div>
+              <div class="project-actions">
+                <a href="./projects.html#project-dental" class="btn btn-secondary btn-sm">Detayları Gör</a>
+                <a href="https://github.com/nidanuryigit" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proje 2 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img src="./assets/images/project-factory.svg" alt="Fabrika Envanter ve Ticaret Otomasyonu Görseli" loading="lazy">
+              <span class="project-badge">C Dili / Dosya I/O</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Fabrika Envanter ve Ticaret Otomasyonu</h3>
+              <p class="project-description">
+                C dili kullanılarak geliştirilmiş, dinamik bellek ve dosya tabanlı (binary file handling) veri depolama mimarisine sahip fabrika hammadde, üretim ve maliyet yönetim sistemi.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Struct yapıları ve binary fread/fwrite dosya akışı</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Kritik stok uyarı algoritması ve kâr-zarar analizi</span>
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-pill">C Dili</span>
+                <span class="tech-pill">File I/O</span>
+                <span class="tech-pill">Veri Yapıları</span>
+                <span class="tech-pill">Algoritmalar</span>
+              </div>
+              <div class="project-actions">
+                <a href="./projects.html#project-factory" class="btn btn-secondary btn-sm">Detayları Gör</a>
+                <a href="https://github.com/nidanuryigit" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proje 3 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img src="./assets/images/project-arduino.svg" alt="Arduino Sensör ve Aydınlatma Prototipleri Görseli" loading="lazy">
+              <span class="project-badge">Arduino / Donanım</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Arduino Sensör &amp; Aydınlatma Prototipleri</h3>
+              <p class="project-description">
+                Arduino Uno üzerinde MQ-2 ve MQ-5 gaz/duman sensörleri ile ortam güvenliği, LDR ve adreslenebilir WS2812B Neopixel LED entegrasyonu ile akıllı aydınlatma prototiplemesi.
+              </p>
+              <ul class="project-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Analog eşik değer kontrolü &amp; sesli/ışıklı alarm</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>WS2812B ile dinamik PWM renk geçiş algoritmaları</span>
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-pill">Arduino Uno</span>
+                <span class="tech-pill">MQ-2/MQ-5</span>
+                <span class="tech-pill">Neopixel LED</span>
+                <span class="tech-pill">Gömülü C++</span>
+              </div>
+              <div class="project-actions">
+                <a href="./projects.html#project-arduino" class="btn btn-secondary btn-sm">Detayları Gör</a>
+                <a href="https://github.com/nidanuryigit" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="./projects.html" class="btn btn-primary">
+            <span>Tüm Projeleri ve Detayları Gör</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DERGİ / EDİTÖRLÜK VURGUSU ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="editorial-card">
+          <div class="editorial-content">
+            <span class="section-badge">Sosyal &amp; Akademik Rol</span>
+            <h2 style="font-size: 1.85rem; margin-bottom: 1rem;">YAZEK Dijital Dergi: Editörlük &amp; Sayfa Tasarımı</h2>
+            <p style="margin-bottom: 1.25rem;">
+              Yazılım geliştirmenin yanı sıra dijital yayıncılık, sayfa mizanpajı ve içerik editörlüğü konularında aktif olarak çalışıyorum. <strong>YAZEK Dijital Dergi</strong> bünyesinde mühendislik, teknoloji ve düşünce dünyasına hitap eden içeriklerin hazırlanması, görsel düzeni ve sayfa tasarımı süreçlerini yürütüyorum.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+              <span class="skill-tag">Dijital Yayıncılık</span>
+              <span class="skill-tag">Tipografi &amp; Grid Sistemleri</span>
+              <span class="skill-tag">Teknik Editörlük</span>
+              <span class="skill-tag">Görsel Düzenleme</span>
+            </div>
+            <a href="./about.html#editorial-experience" class="btn btn-secondary btn-sm">
+              <span>Deneyim Detaylarını İncele</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="editorial-visual">
+            <img src="./assets/images/dergi-yazek.svg" alt="YAZEK Dijital Dergi Tasarım Önizlemesi" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HIZLI İLETİŞİM ÇAĞRISI ==================== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="card" style="padding: 3rem 2rem; text-align: center; background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(6, 182, 212, 0.08)); border-color: var(--border-accent);">
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Yeni Bir Fikir veya İş Birliği mi Var?</h2>
+          <p style="max-width: 600px; margin: 0 auto 1.75rem auto;">
+            Staj, proje geliştirme, araştırma veya ortak çalışmalar için her zaman iletişime açığım. Fikirlerinizi paylaşmaktan çekinmeyin.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="./contact.html" class="btn btn-primary">
+              <span>Mesaj Gönder</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+            </a>
+            <a href="https://github.com/nidanuryigit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>GitHub Profilim</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-badge">NY</div>
+            <div class="brand-text">
+              <span class="name">Nida Nur Yiğit</span>
+              <span class="subtitle">Bilgisayar Mühendisliği Öğrencisi</span>
+            </div>
+          </div>
+          <p>
+            Gaziantep İslam Bilim ve Teknoloji Üniversitesi (GİBTÜ) 2. sınıf öğrencisi. Gömülü donanımlar, sistem mimarileri ve otomasyon çözümleri.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/nidanuryigit" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/nidanuryigit" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="mailto:nidanuryigit.ce@gmail.com" class="social-btn" aria-label="E-posta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Ana Sayfa</a></li>
+            <li><a href="./about.html">Hakkımda &amp; Özgeçmiş</a></li>
+            <li><a href="./projects.html">Projelerim &amp; Kodlar</a></li>
+            <li><a href="./contact.html">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Mühendislik Odakları</h4>
+          <ul class="footer-links">
+            <li><a href="./projects.html">C &amp; Veri Yapıları</a></li>
+            <li><a href="./projects.html">Python &amp; SQLite Otomasyonları</a></li>
+            <li><a href="./projects.html">Arduino &amp; Gaz Sensörleri</a></li>
+            <li><a href="./about.html">YAZEK Dijital Dergi Tasarımı</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nida Nur Yiğit. Tüm hakları saklıdır.</p>
+        <p>GitHub Pages üzerinde saf HTML5, CSS3 &amp; JavaScript ile geliştirildi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ana JavaScript Dosyası (Relative Path) -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
